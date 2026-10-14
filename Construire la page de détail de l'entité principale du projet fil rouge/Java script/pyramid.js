@@ -1,5 +1,5 @@
 let height=6
-for(row=1;row<=height;row++){
+for(row=height;row>=1;row--){
     txt=""
     for(space=1;space<=height-row;space++){
         txt=txt+" "
