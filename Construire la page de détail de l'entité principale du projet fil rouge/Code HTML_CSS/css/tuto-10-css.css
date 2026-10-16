@@ -8,7 +8,7 @@ body {
 
 .txt{
     width: fit-content;
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 4px 16px;
     font-size: 14px;
 
@@ -26,7 +26,7 @@ h1{
     font-size:50px;;
 }
 
-.portrait-img{
+.img1{
     height: 50px;
     border-color: #6a6a6a;
     border-style: solid;
@@ -51,4 +51,13 @@ h1{
 .auteur{
     font-size:x-small;
     color: #b4b4b4;
+}
+/* ------------------------------------------------------ */
+.img2{
+    position: absolute;
+    right: 0px;
+    top: 280px;
+    height: 200px;
+    width: 1400px;
+    object-fit:cover;
 }
