@@ -1,0 +1,8 @@
+body {
+    /* Pour bien voir l'effet de la marge négative, on ajoute de l'espace au-dessus */
+    padding-top: 100px; 
+}
+
+.carte {
+    max-width: 600px;
+}
