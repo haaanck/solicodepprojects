@@ -51,22 +51,23 @@ section{
 .skills{
     position: absolute;
     top: 370px;
-    width: 300px;
+    width: 250px;
     height: 220px;
     background-color: hsl(81, 29%, 39%);
     color: black;
     font-size: 30px;
     border-radius: 40px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
 }
 .span2{
     color: hsl(82, 39%, 24%);
     text-decoration: underline;
 }
-.span1{
-    color: hsl(55, 35%, 65%);
-    text-decoration: underline;
-    font-size: 40px;
-
+h4{
+    position: absolute;
+    top: -5px;
+    right: 80px;
 }
