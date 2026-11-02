@@ -2,3 +2,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    background: #c3c6c9;
+    font-family: Arial, sans-serif;
+    color: #1d293a;    
+}
