@@ -1,18 +1,27 @@
 .carte-article {
     width: 300px;
-    background: #ffffff;
-    border: 2px solid #e5e7eb;
+    background: white;
+    border: 1px solid #e5e7eb;
     margin-bottom: 24px;
+    margin-top: 10px;
     border-radius: 16px;
     overflow: hidden;
 }
+.carte-meta {
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 12px;
+    color: #9ca3af;
+    border-top: 1px solid #f3f4f6;
+}
 .carte-contenu {
-    padding: 30px;
+    padding: 20px;
 }
 .carte-image {
     display: block;
 }
 .carte-image img {
+    padding-top: 5px;
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -26,12 +35,4 @@
     border-radius: 99px;
     background: #f0f6ff;
     color: #1c5bba;
-}
-
-.carte-meta {
-    margin-top: 20px;
-    padding-top: 16px;
-    font-size: 12px;
-    color: #9ca3af;
-    border-top: 1px solid #f3f4f6;
 }
