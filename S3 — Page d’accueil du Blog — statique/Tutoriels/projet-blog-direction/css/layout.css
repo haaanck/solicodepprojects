@@ -19,12 +19,21 @@
 .barre-navigation { 
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+}
+
+.liens-navigation {
+    display:flex;
+    gap: 24px;
 }
 
 .liens-navigation a { 
     color: #6b7280; 
     font-size: 14px; 
-    font-weight: 500; }
+    font-weight: 500; 
+    display:flex;
+    gap: 24px;
+}
 
 .pied-de-page { 
     margin-top: 80px;
@@ -35,7 +44,8 @@
 
 .conteneur-pied-de-page { 
     display: flex; 
-    flex-direction: space-between; 
+    flex-direction: space-between;
+    gap: 48px; 
 }
 
 .colonne-pied-de-page h2 { 
