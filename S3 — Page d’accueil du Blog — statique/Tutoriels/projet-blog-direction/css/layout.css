@@ -17,7 +17,8 @@
 }
 
 .barre-navigation { 
-    display: flex; 
+    display: flex;
+    justify-content: space-between; 
 }
 
 .liens-navigation a { 
@@ -34,7 +35,7 @@
 
 .conteneur-pied-de-page { 
     display: flex; 
-    flex-direction: row; 
+    flex-direction: space-between; 
 }
 
 .colonne-pied-de-page h2 { 
