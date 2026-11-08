@@ -1,0 +1,59 @@
+.banniere-accueil {
+    padding: 80px 14px;
+    text-align: center;
+    background: #ffffff;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+.banniere-accueil h1 {
+    max-width: 850px;
+    margin: 0 auto; 
+    font-size: 56px;
+    color: #0a2042;
+}
+.banniere-accueil p {
+    max-width: 680px;
+    margin: 24px auto 0;
+    font-size: 17px;
+    color: #6b7280;
+}
+
+
+.carte-article {
+    width: 300px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.carte-meta {
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 12px;
+    color: #9ca3af;
+    border-top: 1px solid #f3f4f6;
+}
+.carte-contenu {
+    padding: 20px;
+}
+.carte-image {
+    display: block;
+}
+.carte-image img {
+    padding-top: 5px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.etiquette-categorie {
+    display: inline-block;
+    margin: 16px 16px 0;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 99px;
+    background: #f0f6ff;
+    color: #1c5bba;
+}

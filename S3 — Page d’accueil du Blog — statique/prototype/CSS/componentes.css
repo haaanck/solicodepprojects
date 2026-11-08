@@ -1,0 +1,12 @@
+
+.name{
+    color: rgb(235, 47, 0);
+    font-size: larger;
+}
+
+.junior-size{
+    display: flex;
+    justify-self: center;
+    font-size: small;
+}
+
