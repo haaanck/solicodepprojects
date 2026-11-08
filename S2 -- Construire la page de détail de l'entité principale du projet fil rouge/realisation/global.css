@@ -3,5 +3,6 @@
     padding: 0;
 }
 body{
-    background-color: hsl(0, 0%, 35%);
+    position: relative;
+    background-color: hsl(58, 75%, 43%);
 }
