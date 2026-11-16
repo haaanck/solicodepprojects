@@ -79,52 +79,24 @@
             <div class="grille-articles">
 
                 <!-- Article 1 -->
+                <?php foreach($articles as $article): ?>
                 <div class="carte-article">
-                    <a href="public-article.html" class="carte-image">
-                        <img src="images/article-example.png" alt="Code source affiché sur un écran">
+                    
+                    <a href="article.php?id=<?= $article['id'] ?>" class="carte-image">
+                        <img src="images/<?= htmlspecialchars($article['image'])?>" alt="Code source affiché sur un écran">
                     </a>
-                    <span class="etiquette-categorie bleu">Développement</span>
+                    <span class="etiquette-categorie <?php if($article['categorie_couleur'] == "bleu"): ?>bleu<?php else: ?>rose<?php endif;?> "><?= htmlspecialchars($article['categorie_libelle'])?></span>
                     <div class="carte-contenu">
-                        <h3><a href="public-article.html">Comment bien débuter avec Tailwind CSS en 2026 ?</a></h3>
-                        <p>Découvrez les concepts fondamentaux de Tailwind CSS et pourquoi cette approche utilitaire est devenue le standard de l'industrie.</p>
+                        <h3><a href="public-article.html"><?= htmlspecialchars($article['titre']) ?></a></h3>
+                        <p><?= htmlspecialchars($article['contenu']) ?></p>
                         <div class="carte-meta">
-                            <span>14 Fév 2026</span>
+                            <span><?= date('d M Y', strtotime($article['date_creation'])) ?></span>
                             <span>5 min</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Article 2 -->
-                <div class="carte-article">
-                    <a href="public-article.html" class="carte-image">
-                        <img src="images/article-example.png" alt="Interface utilisateur moderne">
-                    </a>
-                    <span class="etiquette-categorie rose">UI / UX</span>
-                    <div class="carte-contenu">
-                        <h3><a href="public-article.html">L'importance des micro-interactions</a></h3>
-                        <p>Une interface belle n'est pas suffisante. Comprendre comment animer de petites actions peut transformer l'expérience utilisateur.</p>
-                        <div class="carte-meta">
-                            <span>10 Fév 2026</span>
-                            <span>3 min</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="carte-article">
-                    <a href="public-article.html" class="carte-image">
-                        <img src="images/article-example.png" alt="Équipe de développeurs en réunion">
-                    </a>
-                    <span class="etiquette-categorie vert">Management</span>
-                    <div class="carte-contenu">
-                        <h3><a href="public-article.html">Gérer une équipe de développeurs en Full Remote</a></h3>
-                        <p>Les méthodes agiles et les rituels essentiels pour maintenir la cohésion de groupe et la productivité lorsque tous les membres sont distribués.</p>
-                        <div class="carte-meta">
-                            <span>05 Fév 2026</span>
-                            <span>8 min</span>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
+                
 
             </div>
         </div>
