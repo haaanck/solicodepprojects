@@ -85,8 +85,13 @@
                     <a href="article.php?id=<?= $article['id'] ?>" class="carte-image">
                         <img src="images/<?= htmlspecialchars($article['image'])?>" alt="Code source affiché sur un écran">
                     </a>
-                    <span class="etiquette-categorie <?php if($article['categorie_couleur'] == "bleu"): ?>bleu<?php else: ?>rose<?php endif;?> "><?= htmlspecialchars($article['categorie_libelle'])?></span>
-                    <div class="carte-contenu">
+                    <span class="etiquette-categorie <?php if ($article['categorie_couleur'] == 'bleu'): ?>bleu<?php else: ?>rose<?php endif; ?>">
+                    <?= htmlspecialchars($article['categorie_libelle']) ?>
+                    </span>
+                        <div class="carte-contenu">
+                      <?php if ($article['id'] == 1): ?>
+                          <small class="badge-special">⭐ À la une</small>
+                      <?php endif; ?>
                         <h3><a href="public-article.html"><?= htmlspecialchars($article['titre']) ?></a></h3>
                         <p><?= htmlspecialchars($article['contenu']) ?></p>
                         <div class="carte-meta">

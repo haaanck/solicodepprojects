@@ -213,6 +213,16 @@ a {
     color: #1c5bba;
 }
 
+.rose{
+    color: rgb(229, 59, 87);
+    background-color: rgba(229, 59, 87, 0.158);
+}
+
+.blue{
+    color: rgb(81, 81, 255);
+    background-color: rgb(81, 81, 255);
+}
+
 .carte-contenu {
     padding: 16px;
 }
