@@ -58,11 +58,12 @@
             <section class="filtre-categories">
                 <h2>Explorer par thème</h2>
                 <div class="liste-filtres">
-                    <a href="public-index.html" class="pilule-filtre actif">Tous les articles</a>
-                    <a href="public-categorie.html" class="pilule-filtre">Développement</a>
-                    <a href="public-categorie.html" class="pilule-filtre">Design UI/UX</a>
-                    <a href="public-categorie.html" class="pilule-filtre">Productivité</a>
-                    <a href="public-categorie.html" class="pilule-filtre">Management</a>
+                    <a href="index.php" class="pilule-filtre actif">Tous les articles</a>
+                    <?php foreach($categories as $cat): ?>
+                    <a href="categories.php?id=<?= $cat['id'] ?>" class="pilule-filtre">
+                        <?= htmlspecialchars($cat['lable']) ?>
+                    </a>
+                    <?php endforeach; ?>
                 </div>
             </section>
 

@@ -20,4 +20,9 @@ $articles = [
     ]
 ];
 
+$categories = [
+    ['id' => 1, 'lable' => 'Développement'],
+    ['id' => 2, 'lable' => 'Design UI/UX']
+];
+
 require 'index-template.php';
