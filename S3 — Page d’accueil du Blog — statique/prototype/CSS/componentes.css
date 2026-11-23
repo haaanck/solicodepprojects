@@ -16,8 +16,27 @@
 }
 
 img{
+    margin-bottom: 10px;
     width: 250px;
     height: 160px;
     border-top-right-radius: 11px;
     border-top-left-radius: 11px;
 }
+
+.card-categorie{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: smaller;
+    background-color: #c2dbff;
+    color: #1c5bba;
+
+}
+
+p{
+        margin-top: 5px;
+}
+
+ hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }

@@ -21,27 +21,24 @@
     </header>
 
     <section class="introduction">
-        <h1>Welcome to <span class="name">Aymane Marouat</span>'s Portfolio<br><span class="junior-size">A junior web devloper</span></h1>
+        <h1>Welcome to <span class="name">Aymane Marouat</span>'s Portfolio<br><span class="junior-size">A junior web developer</span></h1>
     </section>
 
     <section class="container1">
      <div class="articles-background">
 
-        <div class="article1">
-            <img src="img/article2.jpg" alt="dev-img">
-        </div>
+    <?php foreach($articles as $art): ?>
 
         <div class="article1">
-            <img src="img/article2.jpg" alt="dev-img">
-        </div>
+            <img src="<?= htmlspecialchars($art['image'])?>" alt="dev-img">
 
-        <div class="article1">
-            <img src="img/article2.jpg" alt="dev-img">
-        </div>
+            <span class='card-categorie'><?= htmlspecialchars($art['categorie'])?></span>
 
-        <div class="article1">
-            <img src="img/article2.jpg" alt="dev-img">
+            <p><?=htmlspecialchars($art['description'])?></p>
+
+            <hr>
         </div>
+    <?php endforeach; ?>
 
      </div>
     </section>
