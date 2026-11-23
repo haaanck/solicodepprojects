@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,27 +8,40 @@
     <link rel="stylesheet" href="CSS/layout.css">
     <link rel="stylesheet" href="CSS/global.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul class="navigation-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
+                <li><a href="#">Articles</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="introduction">
-        <h1>Welcome to <span class="name">Aymane Marouat</span>'s Portfolio<br><span class="junior-size">A junior web devloper</span></h1>
+        <h1>Welcome to <span class="name">Aymane Marouat</span>'s Portfolio<br><span class="junior-size">A junior web developer</span></h1>
     </section>
 
     <section class="container1">
      <div class="articles-background">
-        <div class="article1"></div>
-        <div class="article1"></div>
-        <div class="article1"></div>
-        <div class="article1"></div>
+
+    <?php foreach($articles as $art): ?>
+
+        <div class="article1">
+            <img src="<?= htmlspecialchars($art['image'])?>" alt="dev-img">
+
+            <span class="card-categorie <?= htmlspecialchars($art['categorie_couleur']) ?>">
+                <?= htmlspecialchars($art['categorie']) ?>
+            </span>
+
+            <p><?=htmlspecialchars($art['description'])?></p>
+
+            <hr>
+        </div>
+    <?php endforeach; ?>
+
      </div>
     </section>
     <footer></footer>

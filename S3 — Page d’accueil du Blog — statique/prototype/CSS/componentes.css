@@ -1,12 +1,60 @@
-
-.name{
-    color: rgb(235, 47, 0);
+﻿.name{
+    font-style: italic;
     font-size: larger;
+    color: #14b8a6;
+}
+
+.name:hover{
+    color: #0d9488;
 }
 
 .junior-size{
     display: flex;
-    justify-self: center;
-    font-size: small;
+    justify-content: center;
+    font-size: 16px;
+    color: #78716c;
 }
 
+img{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 160px;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+}
+
+.card-categorie {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: smaller;
+    padding: 3px 10px; 
+}
+
+.card-categorie.bleu {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.card-categorie.rose {
+    background-color: #fce7f3;
+    color: #be185d;
+}
+
+.card-categorie.jaune {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.card-categorie.vert {
+    background-color: #ccfbf1;
+    color: #0f766e;
+}
+
+p{
+    margin-top: 5px;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
