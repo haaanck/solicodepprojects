@@ -5,8 +5,6 @@
     align-items: center;
     height: 80px;
     border-bottom: 3px solid #14b8a6;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 nav{
@@ -20,7 +18,7 @@ nav{
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
-    font-size: 36px;
+    font-size: 30px;
     color: #1c1917;
 }
 
@@ -57,7 +55,5 @@ footer{
     align-items: center;
     height: 80px;
     border-top: 3px solid #14b8a6;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
     color: #a8a29e;
 }
