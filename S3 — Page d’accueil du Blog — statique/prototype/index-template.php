@@ -32,7 +32,9 @@
         <div class="article1">
             <img src="<?= htmlspecialchars($art['image'])?>" alt="dev-img">
 
-            <span class='card-categorie'><?= htmlspecialchars($art['categorie'])?></span>
+            <span class="card-categorie <?= htmlspecialchars($art['categorie_couleur']) ?>">
+                <?= htmlspecialchars($art['categorie']) ?>
+            </span>
 
             <p><?=htmlspecialchars($art['description'])?></p>
 
